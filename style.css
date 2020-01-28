@@ -1,0 +1,135 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(fondoRblack02.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: rgb(255, 251, 251);
+    background-color: #FFF;
+    margin: 0px auto;
+    position: relative;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-weight: normal;
+    background-color: rgb(70, 70, 75);
+    
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(27, 26, 26);
+}
+  
+ul.topnav li {float: right;}
+  
+ul.topnav li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: 650;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.topnav li a:hover:not(.active) {background-color: rgb(3, 0, 184);}
+  
+ul.topnav li a.active {
+    background-color: rgb(170, 0, 0);
+    color: white;
+}
+  
+ul.topnav li.right {float: left;}
+
+.intro-content {
+    position: absolute;
+    padding: 20% 0 5% 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#intro h1 {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#intro p.subtitle {
+    color: #ddd;
+}
+
+/* TABLET OR MOBILE VIEW */
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    
+    .right {
+        display: none;
+    }
+
+    .intro-content {
+        padding: 30% 0 5% 0;
+    }
+  }
+/* //// */
+
+footer {
+    width: 0px;
+    height: 0px;
+    background-color: rgb(190, 106, 106);
+    margin: 0 auto;
+}
+
+h1, h6 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.textport {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+p {
+    text-align: center;
+}
+
+.imagenes {
+    margin: 10px 10px;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 1280px) {
+    .container2 {
+        width: 1290px;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .imagenes {
+        width: 15%;
+        padding-bottom: 2%; /* 32:18, i.e. 16:9 */
+        margin-bottom: 2%; /* (100-32*3)/2 */
+      }
+}
